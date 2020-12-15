@@ -1,0 +1,3 @@
+#-------starter自动装配,多个以逗号隔开---------
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  cn.quantgroup.vcc.dinglog.demo.DemoConfig
