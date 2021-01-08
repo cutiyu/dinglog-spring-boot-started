@@ -9,7 +9,7 @@
         <!--<version>2.2.6.RELEASE</version>-->
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>cn.quantgroup.vcc</groupId>
+    <groupId>cn.quantgroup.dinglog</groupId>
     <artifactId>dinglog-spring-boot-started</artifactId>
     <version>0.0.2-SNAPSHOT</version>
     <name>dinglog-spring-boot-started</name>

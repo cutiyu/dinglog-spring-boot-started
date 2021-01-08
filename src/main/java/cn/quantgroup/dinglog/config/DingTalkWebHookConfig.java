@@ -1,9 +1,9 @@
-package cn.quantgroup.vcc.dinglog.config;
+package cn.quantgroup.dinglog.config;
 
-import cn.quantgroup.vcc.dinglog.logback.DingTalkAppenderSync;
-import cn.quantgroup.vcc.dinglog.properties.DingLogBackProperties;
-import cn.quantgroup.vcc.dinglog.properties.WebHookSecurityProperties;
-import cn.quantgroup.vcc.dinglog.service.WebHookServiceImpl;
+import cn.quantgroup.dinglog.demo.DemoService;
+import cn.quantgroup.dinglog.properties.DingTalkWebHookProperties;
+import cn.quantgroup.dinglog.service.DingTalkSendMsgService;
+import cn.quantgroup.dinglog.service.impl.DingTalkSendMsgServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
@@ -16,17 +16,20 @@ import org.springframework.context.annotation.Configuration;
  * @Created by tangfeng 2020-07-07 19:56
  */
 @Configuration
-@EnableConfigurationProperties(value = {WebHookSecurityProperties.class})
-@ConditionalOnProperty(matchIfMissing = true)
-public class WebHookSecurityConfig {
+@EnableConfigurationProperties(value = {DingTalkWebHookProperties.class})
+@ConditionalOnProperty(prefix = "dinglog.webhook.security",
+        name = "accessToken",
+        matchIfMissing= true)
+public class DingTalkWebHookConfig {
 
     @Autowired
-    private WebHookSecurityProperties webHookSecurityProperties;
+    private DingTalkWebHookProperties webHookSecurityProperties;
 
 
     @Bean(name = "webHook")
-    public WebHookServiceImpl demoService(){
-        return new WebHookServiceImpl(webHookSecurityProperties);
+    @ConditionalOnMissingBean(DingTalkSendMsgService.class)
+    public DingTalkSendMsgService dingTalkSendMsgService(){
+        return new DingTalkSendMsgServiceImpl(webHookSecurityProperties);
     }
 
 

@@ -1,4 +1,4 @@
-package cn.quantgroup.vcc.dinglog.demo;
+package cn.quantgroup.dinglog.demo;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;

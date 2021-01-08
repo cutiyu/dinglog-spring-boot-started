@@ -1,4 +1,4 @@
-package cn.quantgroup.vcc.dinglog.properties;
+package cn.quantgroup.dinglog.properties;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
@@ -10,14 +10,18 @@ import java.util.Map;
  * @Created by tangfeng 2020-07-07 17:45
  */
 @ConfigurationProperties(prefix = "dinglog.webhook.security")
-public class WebHookSecurityProperties {
+public class DingTalkWebHookProperties {
 
     /**
      * 业务关键词
      */
     private String keyWords;
 
-    //private Map<String,String> appenderNameToken;
+    /**
+     * robot token
+     */
+    private String accessToken;
+
     /**
      * 签名的秘钥
      */
@@ -26,14 +30,7 @@ public class WebHookSecurityProperties {
      * ip段
      */
     private String ipSegments;
-    /**
-     * robot token
-     */
-    private String accessToken;
-    /**
-     * robot send url
-     */
-    private String url = "https://oapi.dingtalk.com/robot/send";
+
 
     public String getKeyWords() {
         return keyWords;
@@ -67,30 +64,4 @@ public class WebHookSecurityProperties {
         this.accessToken = accessToken;
     }
 
-    public String getUrl() {
-        return url;
-    }
-
-    public void setUrl(String url) {
-        this.url = url;
-    }
-
-    /*public Map<String, String> getAppenderNameToken() {
-        return appenderNameToken;
-    }
-
-    public void setAppenderNameToken(Map<String, String> appenderNameToken) {
-        this.appenderNameToken = appenderNameToken;
-    }*/
-
-    @Override
-    public String toString() {
-        return "WebHookSecurityProperties{" +
-                "keyWords='" + keyWords + '\'' +
-                ", signSecret='" + signSecret + '\'' +
-                ", ipSegments='" + ipSegments + '\'' +
-                ", accessToken='" + accessToken + '\'' +
-                ", url='" + url + '\'' +
-                '}';
-    }
 }

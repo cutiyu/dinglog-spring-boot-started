@@ -1,4 +1,4 @@
-package cn.quantgroup.vcc.dinglog.enums;
+package cn.quantgroup.dinglog.enums;
 
 /**
  * @Describe:

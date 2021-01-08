@@ -1,0 +1,68 @@
+package cn.quantgroup.dinglog.logback;
+
+/**
+ * @Describe:
+ * @Created by tangfeng 2020-12-16 10:25
+ */
+public class DingTalkLogbackParam {
+
+    private boolean sendMsg = false;
+
+    private boolean layoutLog = false;
+
+    private String warnLevel = "ERROR";
+
+    private String logExStackTracePackage = "quantgroup";
+
+    private String webHookAccessToken;
+
+    private String markMsg;
+
+    public boolean isSendMsg() {
+        return sendMsg;
+    }
+
+    public void setSendMsg(boolean sendMsg) {
+        this.sendMsg = sendMsg;
+    }
+
+    public String getWebHookAccessToken() {
+        return webHookAccessToken;
+    }
+
+    public void setWebHookAccessToken(String webHookAccessToken) {
+        this.webHookAccessToken = webHookAccessToken;
+    }
+
+    public String getMarkMsg() {
+        return markMsg;
+    }
+
+    public void setMarkMsg(String markMsg) {
+        this.markMsg = markMsg;
+    }
+
+    public String getWarnLevel() {
+        return warnLevel;
+    }
+
+    public void setWarnLevel(String warnLevel) {
+        this.warnLevel = warnLevel;
+    }
+
+    public boolean isLayoutLog() {
+        return layoutLog;
+    }
+
+    public void setLayoutLog(boolean layoutLog) {
+        this.layoutLog = layoutLog;
+    }
+
+    public String getLogExStackTracePackage() {
+        return logExStackTracePackage;
+    }
+
+    public void setLogExStackTracePackage(String logExStackTracePackage) {
+        this.logExStackTracePackage = logExStackTracePackage;
+    }
+}

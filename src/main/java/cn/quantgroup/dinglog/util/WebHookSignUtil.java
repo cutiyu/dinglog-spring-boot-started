@@ -1,4 +1,4 @@
-package cn.quantgroup.vcc.dinglog.util;
+package cn.quantgroup.dinglog.util;
 
 import org.apache.commons.codec.binary.Base64;
 

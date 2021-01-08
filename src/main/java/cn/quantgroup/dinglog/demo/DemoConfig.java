@@ -1,7 +1,5 @@
-package cn.quantgroup.vcc.dinglog.demo;
+package cn.quantgroup.dinglog.demo;
 
-import cn.quantgroup.vcc.dinglog.logback.DingTalkAppenderSync;
-import cn.quantgroup.vcc.dinglog.properties.WebHookSecurityProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
@@ -14,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
  * @Created by tangfeng 2020-05-06 16:40
  */
 @Configuration
-@EnableConfigurationProperties({DemoProperties.class, WebHookSecurityProperties.class})
+@EnableConfigurationProperties({DemoProperties.class})
 @ConditionalOnProperty(
         prefix = "demo",
         name = "isopen",
@@ -27,13 +25,11 @@ import org.springframework.context.annotation.Configuration;
 public class DemoConfig {
     @Autowired
     private DemoProperties demoProperties;
-    @Autowired
-    private WebHookSecurityProperties webHookSecurityProperties;
 
     @Bean(name = "demo")
     @ConditionalOnMissingBean(DemoService.class)
     public DemoService demoService(){
-        return new DemoService(demoProperties,webHookSecurityProperties);
+        return new DemoService(demoProperties);
     }
 
     /*@Bean(name = "dintlog")
