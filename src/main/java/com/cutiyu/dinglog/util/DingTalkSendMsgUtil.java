@@ -1,4 +1,4 @@
-package cn.quantgroup.dinglog.util;
+package com.cutiyu.dinglog.util;
 
 import com.dingtalk.api.DefaultDingTalkClient;
 import com.dingtalk.api.DingTalkClient;
@@ -9,7 +9,7 @@ import org.springframework.util.Assert;
 
 /**
  * @Describe:
- * @Created by tangfeng 2020-07-07 19:58
+ *
  */
 
 public class DingTalkSendMsgUtil {

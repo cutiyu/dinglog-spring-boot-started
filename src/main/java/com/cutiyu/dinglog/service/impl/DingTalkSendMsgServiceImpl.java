@@ -1,13 +1,13 @@
-package cn.quantgroup.dinglog.service.impl;
+package com.cutiyu.dinglog.service.impl;
 
-import cn.quantgroup.dinglog.properties.DingTalkWebHookProperties;
-import cn.quantgroup.dinglog.service.DingTalkSendMsgService;
-import cn.quantgroup.dinglog.util.DingTalkSendMsgUtil;
+import com.cutiyu.dinglog.properties.DingTalkWebHookProperties;
+import com.cutiyu.dinglog.service.DingTalkSendMsgService;
+import com.cutiyu.dinglog.util.DingTalkSendMsgUtil;
 import org.springframework.util.Assert;
 
 /**
  * @Describe:
- * @Created by tangfeng 2020-07-07 19:58
+ *
  */
 public class DingTalkSendMsgServiceImpl implements DingTalkSendMsgService {
 

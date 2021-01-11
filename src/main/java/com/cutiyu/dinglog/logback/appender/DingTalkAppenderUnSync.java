@@ -1,14 +1,14 @@
-package cn.quantgroup.dinglog.logback.appender;
+package com.cutiyu.dinglog.logback.appender;
 
 import ch.qos.logback.classic.encoder.PatternLayoutEncoder;
 import ch.qos.logback.classic.spi.LoggingEvent;
 import ch.qos.logback.core.UnsynchronizedAppenderBase;
-import cn.quantgroup.dinglog.logback.DingTalkLogbackParam;
-import cn.quantgroup.dinglog.logback.DingTalkLogbackSendMsg;
+import com.cutiyu.dinglog.logback.DingTalkLogbackParam;
+import com.cutiyu.dinglog.logback.DingTalkLogbackSendMsg;
 
 /**
  * @Describe:
- * @Created by tangfeng 2020-12-14 14:50
+ *
  */
 
 public class DingTalkAppenderUnSync extends UnsynchronizedAppenderBase<LoggingEvent> {

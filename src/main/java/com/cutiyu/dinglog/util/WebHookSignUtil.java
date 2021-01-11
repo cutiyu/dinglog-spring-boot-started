@@ -1,4 +1,4 @@
-package cn.quantgroup.dinglog.util;
+package com.cutiyu.dinglog.util;
 
 import org.apache.commons.codec.binary.Base64;
 
@@ -8,7 +8,7 @@ import java.net.URLEncoder;
 
 /**
  * @Describe:
- * @Created by tangfeng 2020-07-08 15:41
+ *
  */
 public class WebHookSignUtil {
 

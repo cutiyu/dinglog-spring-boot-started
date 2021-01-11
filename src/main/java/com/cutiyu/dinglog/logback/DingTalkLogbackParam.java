@@ -1,8 +1,8 @@
-package cn.quantgroup.dinglog.logback;
+package com.cutiyu.dinglog.logback;
 
 /**
  * @Describe:
- * @Created by tangfeng 2020-12-16 10:25
+ *
  */
 public class DingTalkLogbackParam {
 
@@ -12,7 +12,7 @@ public class DingTalkLogbackParam {
 
     private String warnLevel = "ERROR";
 
-    private String logExStackTracePackage = "quantgroup";
+    private String logExStackTracePackage = "cutyiyu";
 
     private String webHookAccessToken;
 

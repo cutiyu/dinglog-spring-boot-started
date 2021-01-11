@@ -1,4 +1,4 @@
-package cn.quantgroup.dinglog.demo;
+package com.cutiyu.dinglog.demo;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * @Describe: 把demoService
- * @Created by tangfeng 2020-05-06 16:40
+ *
  */
 @Configuration
 @EnableConfigurationProperties({DemoProperties.class})

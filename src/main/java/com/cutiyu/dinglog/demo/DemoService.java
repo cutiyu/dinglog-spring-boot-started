@@ -1,9 +1,9 @@
-package cn.quantgroup.dinglog.demo;
+package com.cutiyu.dinglog.demo;
 
 
 /**
  * @Describe: 定义demo的函数实现
- * @Created by tangfeng 2020-05-06 16:39
+ *
  */
 public class DemoService {
 

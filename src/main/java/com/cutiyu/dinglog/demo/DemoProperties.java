@@ -1,11 +1,11 @@
-package cn.quantgroup.dinglog.demo;
+package com.cutiyu.dinglog.demo;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 
 /**
  * @Describe: 定义demo的配置文件属性
- * @Created by tangfeng 2020-05-06 16:24
+ *
  */
 @ConfigurationProperties(prefix = "demo1")
 public class DemoProperties {

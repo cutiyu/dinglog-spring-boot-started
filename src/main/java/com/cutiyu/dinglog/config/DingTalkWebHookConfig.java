@@ -1,9 +1,8 @@
-package cn.quantgroup.dinglog.config;
+package com.cutiyu.dinglog.config;
 
-import cn.quantgroup.dinglog.demo.DemoService;
-import cn.quantgroup.dinglog.properties.DingTalkWebHookProperties;
-import cn.quantgroup.dinglog.service.DingTalkSendMsgService;
-import cn.quantgroup.dinglog.service.impl.DingTalkSendMsgServiceImpl;
+import com.cutiyu.dinglog.properties.DingTalkWebHookProperties;
+import com.cutiyu.dinglog.service.DingTalkSendMsgService;
+import com.cutiyu.dinglog.service.impl.DingTalkSendMsgServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
@@ -13,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * @Describe:
- * @Created by tangfeng 2020-07-07 19:56
+ *
  */
 @Configuration
 @EnableConfigurationProperties(value = {DingTalkWebHookProperties.class})

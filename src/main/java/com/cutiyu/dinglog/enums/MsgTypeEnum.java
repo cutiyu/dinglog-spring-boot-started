@@ -1,8 +1,8 @@
-package cn.quantgroup.dinglog.enums;
+package com.cutiyu.dinglog.enums;
 
 /**
  * @Describe:
- * @Created by tangfeng 2020-07-09 10:16
+ *
  */
 public enum MsgTypeEnum {
     TEXT("text", "text文本消息"),

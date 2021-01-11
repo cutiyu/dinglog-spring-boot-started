@@ -1,4 +1,4 @@
 #-------starter自动装配,多个以逗号隔开---------
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  cn.quantgroup.dinglog.demo.DemoConfig,\
-  cn.quantgroup.dinglog.config.DingTalkWebHookConfig
+  com.cutiyu.dinglog.demo.DemoConfig,\
+  com.cutiyu.dinglog.config.DingTalkWebHookConfig

@@ -1,16 +1,15 @@
-package cn.quantgroup.dinglog.logback;
+package com.cutiyu.dinglog.logback;
 
 import ch.qos.logback.classic.encoder.PatternLayoutEncoder;
 import ch.qos.logback.classic.spi.IThrowableProxy;
 import ch.qos.logback.classic.spi.LoggingEvent;
 import ch.qos.logback.classic.spi.StackTraceElementProxy;
 import ch.qos.logback.core.spi.ContextAwareBase;
-import cn.quantgroup.dinglog.util.DingTalkSendMsgUtil;
+import com.cutiyu.dinglog.util.DingTalkSendMsgUtil;
 import org.apache.commons.lang3.StringUtils;
 
 /**
  * @Describe:
- * @Created by tangfeng 2020-12-18 15:31
  */
 public class DingTalkLogbackSendMsg {
 

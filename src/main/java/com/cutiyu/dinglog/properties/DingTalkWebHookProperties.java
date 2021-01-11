@@ -1,4 +1,4 @@
-package cn.quantgroup.dinglog.properties;
+package com.cutiyu.dinglog.properties;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
@@ -7,7 +7,7 @@ import java.util.Map;
 
 /**
  * @Describe:
- * @Created by tangfeng 2020-07-07 17:45
+ *
  */
 @ConfigurationProperties(prefix = "dinglog.webhook.security")
 public class DingTalkWebHookProperties {

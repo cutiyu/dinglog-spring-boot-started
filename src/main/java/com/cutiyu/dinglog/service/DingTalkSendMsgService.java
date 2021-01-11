@@ -1,8 +1,8 @@
-package cn.quantgroup.dinglog.service;
+package com.cutiyu.dinglog.service;
 
 /**
  * @Describe:
- * @Created by tangfeng 2020-07-07 19:58
+ *
  */
 public interface DingTalkSendMsgService {
 
