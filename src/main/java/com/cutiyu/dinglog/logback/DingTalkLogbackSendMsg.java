@@ -66,8 +66,16 @@ public class DingTalkLogbackSendMsg {
                 if (stackTraceElementProxyArray != null && stackTraceElementProxyArray.length > 0) {
                     for (int i = 0; i < stackTraceElementProxyArray.length; i++) {
                         StackTraceElementProxy st = stackTraceElementProxyArray[i];
-                        if (StringUtils.isNotEmpty(dingTalkLogbackParam.getLogExStackTracePackage()) && st.toString().contains(dingTalkLogbackParam.getLogExStackTracePackage()) ) {
-                            sbExMsg.append(st.toString()).append("\n");
+
+                        if (StringUtils.isEmpty(dingTalkLogbackParam.getLogExStackTracePackage())) {
+                            continue;
+                        }
+
+                        String[] split = dingTalkLogbackParam.getLogExStackTracePackage().split(",");
+                        for (String packageStr : split) {
+                            if (st.toString().contains(packageStr)) {
+                                sbExMsg.append(st.toString()).append("\n");
+                            }
                         }
                     }
                 }
